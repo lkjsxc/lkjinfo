@@ -1,0 +1,19 @@
+---
+description: lkjinfo agent contract - read AGENTS.md first
+globs:
+alwaysApply: true
+---
+
+Read [AGENTS.md](../AGENTS.md) and follow it.
+
+Non-negotiable:
+- Every file is capped at 50 lines. Split by ownership before adding.
+- [docs/](../docs/README.md) are implementation contracts. Update docs and
+  code in the same change.
+- No fake product behavior, placeholder success, or unrun gate claims.
+- Repository files store durable state; chat does not.
+
+Start every session from [docs/current-state.md](../docs/current-state.md),
+then [docs/execution/current-blockers.md](../docs/execution/current-blockers.md).
+
+Run `python scripts/check-all.py` before handoff when docs or scripts changed.
